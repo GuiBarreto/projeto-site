@@ -21,6 +21,15 @@ main {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.548);
 } 
 
-abbr {
+article > h2 {
+    font-size: 1.2em;
+}
+
+p > abbr {
     text-decoration: none;
+    font-weight: 600;
+}
+
+p a {
+    
 }
