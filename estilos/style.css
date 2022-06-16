@@ -1,11 +1,18 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 
+:root {
+    --primary-color: rgb(138, 43, 226);
+    --secondary-color: rgb(28, 28, 255);
+    --link-color: rgb(255, 201, 40);
+
+}
+
+
 body {
-    background-color: rgb(138, 43, 226);
+    background-color: var(--primary-color);
 
 }
 
@@ -28,8 +35,21 @@ article > h2 {
 p > abbr {
     text-decoration: none;
     font-weight: 600;
+    text-decoration: underline;
+}
+
+p > abbr:hover {
+    text-decoration: none;
 }
 
 p a {
-    
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.459);
+}
+
+p a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
